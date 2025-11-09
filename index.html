@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chin Xian Rong</title>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="image/icon.png">
 
@@ -23,6 +23,9 @@
     <link href="css/project.css" rel="stylesheet">
     <link href="css/skill.css" rel="stylesheet">
     <link href="css/experience.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+	<link href="css/hobbies.css" rel="stylesheet">
 
     <!-- Optional base path (useful if hosting in subdirectory) -->
     <!-- <base href="/"> -->
@@ -72,15 +75,32 @@
 
       // Include all modular components
       document.addEventListener("DOMContentLoaded", () => {
-        includeHTML("navbar", "components/navbar.html");
-        includeHTML("sidebar", "components/sidebar.html");
-                includeHTML("contentview", "components/contentview.html", () => {
-          // Reinitialize slideshow after content loads
-          slideIndex = 1;
-          showDivs(slideIndex);
-        });
-        includeHTML("footer", "components/footer.html");
-      });
+			includeHTML("navbar", "components/navbar.html", () => {
+			// Once navbar is loaded, initialize the mobile menu
+			const btn = document.getElementById('menu-btn');
+			const menu = document.getElementById('mobile-menu');
+
+			if (btn && menu) {
+				btn.addEventListener('click', () => {
+				menu.classList.toggle('hidden');
+				});
+
+				// Close mobile menu when clicking a link
+				document.querySelectorAll('#mobile-menu a').forEach(link => {
+				link.addEventListener('click', () => {
+					menu.classList.add('hidden');
+				});
+				});
+			}
+			});
+
+            includeHTML("contentview", "components/contentview.html", () => {
+				// Reinitialize slideshow after content loads
+				slideIndex = 1;
+				showDivs(slideIndex);
+				});
+				includeHTML("footer", "components/footer.html");
+			});
     </script>
     <script>
 var slideIndex = 1;
@@ -110,6 +130,8 @@ function showDivs(n) {
   dots[slideIndex-1].classList.add("active");
 }
 </script>
+
+
 
     <!-- Bootstrap JS -->
     <script 

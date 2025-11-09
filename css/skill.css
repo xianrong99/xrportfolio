@@ -51,6 +51,21 @@
 }
 
 
+.c100 > .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.c100 > .img-container img {
+    max-width: 40%; /* adjust size */
+    height: auto;
+}
+
+
+
 
 .skill_slide .cards:hover .scard:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -59,7 +74,7 @@
 }
 
 .skill_slide .card_other {
-
+  
   font-size: 12px;
   font-weight: bold;
   height: 50px;

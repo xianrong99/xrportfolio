@@ -1,0 +1,96 @@
+.maincontent {
+    text-align: left;         /* ensure text aligns left */
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  /* background: linear-gradient(135deg, #0a0f24, #1a1f40); */
+}
+
+/* Subtle animated gradient background */
+
+/* Slide content */
+.home_slide {
+  /* position: relative; */
+  /* z-index: 1; */
+  /* animation: fadeInUp 1.8s ease forwards; */
+    display: flex;
+    /* justify-content: center;      centers horizontally */
+    align-items: center;          /* centers vertically */
+
+    width:80%;
+    font-size: 30px;
+    
+    
+
+}
+
+.home_slide h2 {
+  font-size: 1.8rem;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards 0.5s;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home_slide h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #ffffff;
+  opacity: 0;
+  animation: fadeInUp 2s ease forwards 1s;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home_slide h1 {
+    font-size: 2.2rem;
+  }
+  .home_slide h2 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Titan+One&display=swap');
 
 *{
     font-family: "Poppins, sans-serif";
@@ -21,15 +22,25 @@ html, body {
     justify-content: center; /* ✅ horizontally centers content */
 }
 
+.section_title .section_title_box{
+    font-size: 28px;
+    border-bottom: 5px solid peachpuff;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .section_content{
     height: 80vh;
     width: 100%;
+    padding: 20px;
+    /* background-color: red; */
     /* background-color: rgb(178, 18, 18); */
     
 }
 
 .section_content.exp_ctn{
-    /* height: 130vh; */
+    height: 115vh;
     width: 100%;
     /* background-color: rgb(178, 18, 18); */
     display: flex;
@@ -38,17 +49,28 @@ html, body {
 }
 
 
-
-.section.home{
-    background-color: aqua;
+.section.home {
+    background-image: url('../image/mainpic.jpeg');
+    background-size: cover;       /* ⭐ makes the image fill the entire container */
+    background-repeat: no-repeat; /* ⭐ prevents repeating */
+    background-position: center;  /* ⭐ keeps the image centered */
     height: 100vh;
+
     display: flex;
-    align-items: center;     /* ✅ vertically centers content */
-    justify-content: center; /* ✅ horizontally centers content */
+    align-items: center;
+    justify-content: center;
 }
 
+@media (max-width: 768px) {
+    .section.home {
+        background-position: 60% center; /* move left — adjust % as needed */
+    }
+
+}
 .section.about{
-    background-color: rgb(240, 132, 132);
+        /* border: 1px solid black; */
+    background-color: rgb(252, 255, 255);
+        /* background-color:rgb(243, 243, 255); */
     height: 100vh;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
@@ -56,9 +78,9 @@ html, body {
 }
 
 .section.experience{
-    border: 1px solid black;
-    background-color: rgb(255, 244, 161);
-    height: 100vh;
+    /* border: 1px solid black; */
+    background-color: #fbffc5;
+    height: 135vh;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
@@ -66,10 +88,10 @@ html, body {
 }
 
 .section.project{
-
-    background-color: rgb(198, 255, 202);
+    /* border: 1px solid black; */
+    background-color: #f1ffef;
     height: 100vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
@@ -77,8 +99,8 @@ html, body {
 }
 
 .section.skill{
-
-    /* background-color: rgb(239, 168, 255); */
+    /* border: 1px solid black; */
+    background-color: #f9efff;
     height: 100vh;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
@@ -87,8 +109,8 @@ html, body {
 }
 
 .section.hobbie{
-
-    background-color: rgb(148, 94, 235);
+    /* border: 1px solid black; */
+    background-color: #eff6ff;
     height: 100vh;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
@@ -96,9 +118,12 @@ html, body {
 
 }
 
-.section.contact{
 
-    background-color: rgb(246, 86, 219);
+
+
+.section.contact{
+    /* border: 1px solid black; */
+    background-color: #e8f5e9;
     height: 100vh;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
@@ -111,26 +136,26 @@ html, body {
 
     width: 100%;
     height: 87vh;
-    background-color:blue;
+    
 }
 .about_slide{
 
     width: 100%;
     height: 87vh;
-    background-color:blue;
+    
 }
 .experience_slide{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
-    height: 87vh;
-    background-color:blue;
+    height: 122vh;
+    /* background-color:blue; */
 }
 .project_slide{
 
     width: 100%;
     height: 87vh;
     /* background-color:blue; */
-    border: 1px solid rgb(164, 9, 9);
+    /* border: 1px solid rgb(164, 9, 9); */
 }
 .skill_slide{
 
@@ -142,14 +167,15 @@ html, body {
 
     width: 100%;
     height: 87vh;
-    background-color:blue;
+    /* background-color:blue; */
 }
 .contact_slide{
 
     width: 100%;
     height: 87vh;
-    background-color:blue;
+    /* background-color:blue; */
 }
+
 
 .footer {
   position: fixed;
@@ -163,21 +189,39 @@ html, body {
   align-items: center;     /* centers vertically */
 }
 
+
+@media (max-width: 768px) {
+
+    .section.hobbie{
+        height: 120vh;
+        
+    }
+
+    .section_content.hbb_ctn{
+        height: 107vh;
+    }
+    .hobbie_slide{
+        height: 100%;
+    }
+}
+
 @media (max-width: 998px) {
+
+
     .section.experience{
 
-        height: 200vh;
+        height: 230vh;
 
 
     }
     .experience_slide{
 
-        height: 187vh;
+        height: 217vh;
         /* background-color:blue; */
     }
 
     .section_content.exp_ctn{
-        height: 180vh;
+        height: 210vh;
 
         
     }
