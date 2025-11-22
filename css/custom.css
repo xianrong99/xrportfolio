@@ -67,15 +67,87 @@ html, body {
     }
 
 }
+
+.about_slide{
+
+    width: 100%;
+    height: 87vh;
+    
+}
+
 .section.about{
         /* border: 1px solid black; */
     background-color: rgb(252, 255, 255);
-        /* background-color:rgb(243, 243, 255); */
+    /* background-color: red; */
     height: 100vh;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
 }
+
+/* ======================================
+   📱 MOBILE RESPONSIVE (max-width 768px)
+   ====================================== */
+@media (max-width: 768px) {
+.about_slide{
+
+    width: 100%;
+    height: 137vh;
+    
+}
+
+.section.about{
+        /* border: 1px solid black; */
+    /* background-color: rgb(28, 190, 190); */
+    /* background-color: red; */
+    height: 140vh;
+    display: flex;
+    align-items: center;     /* ✅ vertically centers content */
+    justify-content: center; /* ✅ horizontally centers content */
+}
+
+.section_content.abt_ctn{
+    height: 120vh;
+    width: 100%;
+    /* background-color: rgb(178, 18, 18); */
+    display: flex;
+    justify-content: center; /* ✅ horizontally centers content */
+    
+}
+}
+
+/* ======================================
+   📱 SMALL MOBILE (max-width 480px)
+   ====================================== */
+@media (max-width: 480px) {
+.about_slide{
+
+    width: 100%;
+    height: 167vh;
+    
+}
+
+.section.about{
+        /* border: 1px solid black; */
+    /* background-color: rgb(190, 28, 28); */
+    /* background-color: red; */
+    height: 180vh;
+    display: flex;
+    align-items: center;     /* ✅ vertically centers content */
+    justify-content: center; /* ✅ horizontally centers content */
+}
+
+.section_content.abt_ctn{
+    height: 160vh;
+    width: 100%;
+    /* background-color: rgb(26, 93, 159); */
+    display: flex;
+    justify-content: center; /* ✅ horizontally centers content */
+    
+}
+}
+
+
 
 .section.experience{
     /* border: 1px solid black; */
@@ -138,12 +210,7 @@ html, body {
     height: 87vh;
     
 }
-.about_slide{
 
-    width: 100%;
-    height: 87vh;
-    
-}
 .experience_slide{
     /* border: 1px solid black; */
     width: 100%;
