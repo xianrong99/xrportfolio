@@ -157,7 +157,7 @@
 
 .projectname{
     /* background-color: yellow; */
-    height: 5%;
+    height: 7%;
     font-size: 15px;
     font-weight: bolder;
     padding-left: 20px;
@@ -209,7 +209,7 @@
 @media (max-width: 500px) {
 .projectname{
     /* background-color: yellow; */
-    height: 5%;
+    height: 7%;
     font-size: 12px;
     font-weight: bolder;
     padding-left: 20px;
