@@ -226,8 +226,8 @@ html, body {
 @media (max-width: 376px) {
     .section.experience{
         /* background-color: rgb(38, 255, 0); */
-        max-height: 3000px;
-        min-height: 3000px;
+        max-height: 3100px;
+        min-height: 3100px;
     }
 
 }
@@ -352,7 +352,7 @@ html, body {
 
 @media (max-width: 426px) {
     .section.contact{
-        background-color: red;
+        /* background-color: red; */
         max-height: 850px;
         min-height: 850px;
     }
