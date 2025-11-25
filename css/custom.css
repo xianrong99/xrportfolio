@@ -30,7 +30,7 @@ html, body {
     max-height: 105px;
     min-height: 105px;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
