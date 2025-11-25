@@ -93,7 +93,7 @@
 .projectname{
     /* background-color: yellow; */
     height: 10%;
-    font-size: 30px;
+    font-size: 19px;
     font-weight: bolder;
     padding-left: 20px;
     padding-right: 20px;
@@ -151,6 +151,26 @@
     justify-content: center; /* ✅ horizontally centers content */ 
     height: 15px; 
     padding: 15px; 
+}
+
+@media (max-width:803px){
+    .projectcontent .projectdesc{
+        height: 40%;
+        /* background-color: yellow; */
+        font-size: 14px;
+        font-family: "Figtree", sans-serif;
+        font-weight: bold;
+        padding: 30px;
+    }
+
+    .projectname{
+    /* background-color: yellow; */
+    height: 7%;
+    font-size: 19px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }
 
 @media (max-width: 600px) {

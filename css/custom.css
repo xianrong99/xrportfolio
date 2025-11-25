@@ -28,8 +28,9 @@ html, body {
 .section_title{
     height: 10%;
     max-height: 105px;
+    min-height: 105px;
     width: 100%;
-    /* background-color: blue; */
+    background-color: blue;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
@@ -61,6 +62,7 @@ html, body {
     background-position: center;  /* ⭐ keeps the image centered */
     height: 100vh;
     max-height: 1024px;
+    /* min-height: 1024px; */
 
     display: flex;
     align-items: center;
@@ -91,6 +93,7 @@ html, body {
     /* background-color: red; */
     height: 100vh;
     max-height: 1024px;
+    min-height: 800px;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
@@ -107,6 +110,7 @@ html, body {
     .section.about{
         height: 130vh;
         max-height: 1340px;
+        min-height: 1000px;
     }
 }
 
@@ -115,6 +119,7 @@ html, body {
         /* background-color: red; */
         height: 160vh;
         max-height: 1640px;
+        min-height: 1340px;
     }
 }
 .section.project{
@@ -122,6 +127,7 @@ html, body {
     background-color: #f1ffef;
     height: 100vh;
     max-height: 1024px;
+    min-height: 1024px;
     /* border: 1px solid black; */
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
@@ -139,16 +145,17 @@ html, body {
 
 @media (max-width: 480px) {
     .section.project{
-        height: 130vh;
-        max-height: 1340px;
+        max-height: 1140px;
+        min-height: 1140px;
     }
 }
 
 @media (max-width: 376px) {
     .section.project{
-        /* background-color: red; */
-        height: 140vh;
-        max-height: 1440px;
+        
+        
+        max-height: 1040px;
+        min-height: 1040px;
     }
 }
 
@@ -158,7 +165,8 @@ html, body {
     /* border: 1px solid black; */
     background-color: #fbffc5;
     height: 135vh;
-    max-height: 1390px;
+    max-height: 1200px;
+    min-height: 1200px;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
@@ -166,32 +174,70 @@ html, body {
 }
 
 .experience_slide{
-        /* background-color: green; */
+    /* background-color: green; */
     width: 90%;
     height:100%;
     padding-top: 70px;
     padding-bottom: 70px;
+    
+}
+
+.section_content.exp_ctn{
+    height: 90%;
+    width: 100%;
+    /* background-color: rgb(178, 18, 18); */
+    display: flex;
+    justify-content: center; /* ✅ horizontally centers content */
+    
+}
+@media (max-width: 998px) {
+    .section.experience{
+        height: 290vh;
+        max-height: 2000px;
+        min-height: 2000px;
+    }
+
+    .section_content.exp_ctn{
+    height: 95%;
+    width: 100%;
+    /* background-color: rgb(178, 18, 18); */
+    display: flex;
+    justify-content: center; /* ✅ horizontally centers content */
+    
+}
+}
+
+@media (max-width: 520px) {
+    .section.experience{
+        /* background-color: orange; */
+        
+        max-height: 2200px;
+        min-height: 2200px;
+    }
 }
 @media (max-width: 480px) {
     .section.experience{
-        height: 280vh;
-        max-height: 2900px;
+
+        max-height: 2500px;
+        min-height: 2500px;
     }
 }
 
 @media (max-width: 376px) {
     .section.experience{
         /* background-color: rgb(38, 255, 0); */
-        height: 480vh;
-        max-height: 5000px;
+        max-height: 3000px;
+        min-height: 3000px;
     }
+
 }
 
 .section.skill{
     /* border: 1px solid black; */
     background-color: #f9efff;
     height: 100vh;
-    max-height: 1024px;
+    max-height: 850px;
+    min-height: 850px;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
@@ -199,17 +245,35 @@ html, body {
 }
 
 .skill_slide{
+    width: 90%;
+    height:100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
 
-    width: 100%;
-    height: 87vh;
-    /* background-color:blue; */
+@media (max-width: 480px) {
+    .section.skill{
+
+        max-height: 1200px;
+        min-height: 1200px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section.skill{
+        /* background-color: rgb(38, 255, 0); */
+        max-height: 1200px;
+        min-height: 1200px;
+    }
+
 }
 
 .section.hobbie{
     /* border: 1px solid black; */
     background-color: #eff6ff;
     height: 100vh;
-    max-height: 1024px;
+    max-height: 850px;
+    min-height: 850px;
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
@@ -224,18 +288,27 @@ html, body {
     padding-bottom: 70px;
 }
 
+
+@media (max-width: 768px) {
+    .section.hobbie{
+        max-height: 1200px;
+        min-height: 1200px;
+    }
+}
+
 @media (max-width: 480px) {
     .section.hobbie{
-        height: 130vh;
         max-height: 1340px;
+        min-height: 1340px;
     }
 }
 
 @media (max-width: 376px) {
     .section.hobbie{
         /* background-color: red; */
-        height: 200vh;
-        max-height: 2048px;
+        max-height: 1600px;
+        min-height: 1600px;
+
     }
 }
 
@@ -245,44 +318,59 @@ html, body {
     /* border: 1px solid black; */
     background-color: #e8f5e9;
     height: 100vh;
-    max-height: 1024px;
+    max-height: 850px;
+    min-height: 850px;
+
     display: flex;
     align-items: center;     /* ✅ vertically centers content */
     justify-content: center; /* ✅ horizontally centers content */
 
 }
 
-
-
 .contact_slide{
 
-    width: 100%;
+        width: 90%;
     height:100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
     /* background-color:blue; */
 }
 
-.section_content.ctc_ctn{
-    height: 80vh;
-    width: 100%;
-    padding: 20px;
-    /* background-color: red; */
-    /* background-color: rgb(178, 18, 18); */
-    
+@media (max-width: 1440px) {
+    .section.contact{
+        max-height: 1200px;
+        min-height: 1200px;
+    }
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .section.contact{
-        height: 130vh;
-        max-height: 1340px;
+        max-height: 100px;
+        min-height: 1000px;
+    }
+}
+
+@media (max-width: 426px) {
+    .section.contact{
+        background-color: red;
+        max-height: 850px;
+        min-height: 850px;
     }
 }
 
 @media (max-width: 376px) {
     .section.contact{
-        /* background-color: red; */
-        height: 110vh;
-        max-height: 1140px;
+        max-height: 1200px;
+        min-height: 1200px;
     }
 }
+
+@media (max-width: 320px) {
+    .section.contact{
+        max-height: 1200px;
+        min-height: 1200px;
+    }
+}
+
+
 

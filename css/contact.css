@@ -197,8 +197,15 @@
     }
 
     .contact_slide .contact-info .card{
-        height: 20vh;
+        height: 25vh;
     }
     
 
+}
+
+
+@media (max-width: 376px) {
+.contact_slide .contact-info .card{
+      width: 71%;
+}
 }
