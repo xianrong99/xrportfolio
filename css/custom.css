@@ -218,8 +218,8 @@ html, body {
 @media (max-width: 480px) {
     .section.experience{
 
-        max-height: 2500px;
-        min-height: 2500px;
+        max-height: 2800px;
+        min-height: 2800px;
     }
 }
 
