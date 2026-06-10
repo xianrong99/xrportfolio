@@ -1,0 +1,11 @@
+/* ============================================
+   FOOTER — footer.css
+============================================ */
+.site-footer {
+  background: #070d1a;
+  text-align: center;
+  padding: 24px;
+  color: #334155;
+  font-size: 0.8rem;
+}
+.site-footer span { color: #475569; }

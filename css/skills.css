@@ -1,0 +1,53 @@
+/* ============================================
+   SKILLS — skills.css
+============================================ */
+#skill-section { background: var(--white); }
+
+.skills-wrapper   { display: flex; flex-direction: column; gap: 32px; }
+.skill-group-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.skill-chips { display: flex; flex-wrap: wrap; gap: 12px; }
+.skill-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  cursor: default;
+}
+.skill-chip:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+  border-color: var(--accent2);
+}
+.skill-chip i   { font-size: 1.2rem; }
+.skill-chip img { width: 20px; height: 20px; object-fit: contain; }
+
+/* Skill bars */
+.skill-bar-row  { display: flex; flex-direction: column; gap: 14px; }
+.skill-bar-top  { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.skill-bar-name { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+.skill-bar-pct  { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
+.skill-bar-track {
+  height: 6px;
+  background: var(--border);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #60a5fa);
+  border-radius: 100px;
+}

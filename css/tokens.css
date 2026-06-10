@@ -1,0 +1,26 @@
+/* ============================================
+   DESIGN TOKENS — tokens.css
+   All CSS variables used across the site
+============================================ */
+:root {
+  --navy:    #0B1120;
+  --navy2:   #111827;
+  --ink:     #1e293b;
+  --mid:     #475569;
+  --muted:   #94a3b8;
+  --border:  #e2e8f0;
+  --surface: #f8fafc;
+  --white:   #ffffff;
+  --accent:  #2563eb;
+  --accent2: #3b82f6;
+  --gold:    #f59e0b;
+  --green:   #10b981;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --nav-h:      64px;
+  --radius:     16px;
+  --shadow:     0 4px 24px rgba(0,0,0,0.07);
+  --shadow-lg:  0 12px 40px rgba(0,0,0,0.12);
+}

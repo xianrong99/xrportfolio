@@ -1,0 +1,110 @@
+/* ============================================
+   NAVBAR — navbar.css
+============================================ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+.nav-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--mid);
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
+  background: var(--accent);
+  transition: width 0.2s;
+}
+.nav-links a:hover        { color: var(--accent); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-resume {
+  background: var(--accent);
+  color: var(--white) !important;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600 !important;
+  font-size: 0.875rem;
+  transition: background 0.2s, transform 0.2s !important;
+}
+.nav-resume::after  { display: none !important; }
+.nav-resume:hover   { background: #1d4ed8 !important; transform: translateY(-1px); }
+
+/* Hamburger */
+.nav-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+.nav-burger span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Mobile dropdown */
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: var(--nav-h); left: 0; right: 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 24px;
+  z-index: 99;
+  flex-direction: column;
+  gap: 16px;
+}
+.nav-mobile.open { display: flex; }
+.nav-mobile a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--mid);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.nav-mobile a:last-child { border: none; }
+.nav-mobile a:hover      { color: var(--accent); }
+
+@media (max-width: 768px) {
+  .nav-links  { display: none; }
+  .nav-burger { display: flex; }
+}
